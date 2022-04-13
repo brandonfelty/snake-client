@@ -22,6 +22,27 @@ const setupInput = function (conn) {
     if (key === 'd') {
       connection.write('Move: right');
     }
+    if (key === 'h') {
+      connection.write('Say: HI');
+    }
+    if (key === 'l') {
+      connection.write('Say: LOL');
+    }
+    if (key === '1') {
+      connection.write('Say: AMA');
+    }
+    if (key === '2') {
+      connection.write('Say: DIY');
+    }
+    if (key === '3') {
+      connection.write('Say: o.0');
+    }
+    if (key === '4') {
+      connection.write('Say: MFW');
+    }
+    if (key === '5') {
+      connection.write('Say: PSA');
+    }
   };
 
   stdin.on('data', handleUserInput);
